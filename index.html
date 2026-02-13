@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Wear Studio | Premium Vintage Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="re1wear_studio.png" alt="Re:Wear Studio Logo" class="nav-logo">
+                <span class="brand-name">RE:WEAR STUDIO</span>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="cart-btn" class="icon-btn" aria-label="Shopping Bag">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Timeless Style, <br>Re:Woven for You.</h1>
+                <p>Curated vintage pieces and studio-quality aesthetic from the heart of Jordan.</p>
+                <a href="#shop" class="cta-btn">Explore Collection</a>
+            </div>
+        </section>
+
+        <section id="shop" class="products-section">
+            <h2 class="section-title">Latest Drops</h2>
+            <div id="product-grid" class="product-grid">
+                <!-- Products will be injected by main.js -->
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Bag</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items injected by main.js -->
+            </div>
+            <div class="checkout-form">
+                <div class="form-group">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-location">Delivery Location</label>
+                    <input type="text" id="customer-location" placeholder="Amman, Jordan..." required>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="summary-line">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">0.00 JOD</span>
+                </div>
+                <div class="summary-line">
+                    <span>Delivery Fee:</span>
+                    <span id="delivery-fee">2.50 JOD</span>
+                </div>
+                <div class="total-container">
+                    <span>Total:</span>
+                    <span id="cart-total">0.00 JOD</span>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">Send Order to WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-section brand-info">
+                <h3>RE:WEAR STUDIO</h3>
+                <p>Timeless style, re:woven for you. Curating the finest vintage and studio-quality aesthetic in Jordan.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/re1wear_studio/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Amman, Jordan</p>
+                <p><i class="fas fa-phone"></i> 0779461465</p>
+                <p><i class="fas fa-envelope"></i> info@re1wear.studio</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Re:Wear Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
